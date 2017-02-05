@@ -1,6 +1,10 @@
 package ku.util;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+/**
+*ArrayIterator made array can iterate all elements 
+*@author Charin Tantrakul
+*/
 public class ArrayIterator<T> implements Iterator<T>  {
 	/** attribute for the array we want to iterate over */
 	private T[ ] array;
