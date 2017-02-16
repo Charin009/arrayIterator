@@ -42,6 +42,11 @@ public class ArrayIterator<T> implements Iterator<T>  {
 	 * Check next element from array that is non-null element or not.
 	 */
 	public boolean hasNext(){
-		return cursor != array.length-1;
+		boolean checker = false;
+       		for(int i=cursor+1;i<array.length;i++){
+            		if(array[i]!=null)
+                		checker = true;
+        	}
+        	return cursor != array.length-1 && checker;
 	}
 }
